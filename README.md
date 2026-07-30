@@ -1,5 +1,5 @@
 # Nico_Overview_Repository
-Collection of a few key, showcase projects conducted at Willamette University
+Producer and programmer recently graduated with a B.A. in Computer Science at Willamette University. Skilled across Adobe Creative Suite, Maya, and ZBrush, and in programming with Python, JavaScript, and C++, with years of hands-on experience operating technical and audiovisual equipment. Comfortable working independently and collaboratively in fast-paced environments, combining technical and creative skills to produce high-quality digital content. Featured here is a showcase of a few key projects conducted at Willamette University.
 
 **Operating System in Rust**
 
