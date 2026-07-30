@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Clicker Game</title>
+    <link rel="stylesheet" href="style.css"
+</head> 
+<body>
+    <div id="main">
+        <header>Kitty Clicker</header>
+        <h2 id ="loveTitle">Strangers</h1>
+        <div id="selectionOverlay">
+        </div>
+        <div class="heart-background">
+            <div class="heart" style="left: 10%; animation-delay: 0s;">❤</div>
+            <div class="heart" style="left: 30%; animation-delay: 2s;">❤</div>
+            <div class="heart" style="left: 55%; animation-delay: 4s;">❤</div>
+            <div class="heart" style="left: 80%; animation-delay: 1s;">❤</div>
+        </div>
+        <button id ="petButton" onclick = "clickPet()" class ="pet-image">
+            <img id = "petImg" src="bcatNorm.png" alt ="Pet">
+        </button>
+            <div class="cat-shadow"></div>
+        <p id="affectionAmount">Click the cat to gain affection!</p>
+
+        <button id="treatUpgrade" onclick="purchaseTreat()">Give a Treat!<span id="textCost">100 affection</span></button>
+
+        <script src="app.js"></script>
+
+        <div id= "progress-section" class="progress-section">
+            <div class="progress-labels">
+                <span id="currentLevelMin">0</span>
+                <div class="progress-bar-bg">
+                    <div id="loveProgressBar"></div>
+                </div>
+                <span id="nextLevelMax">1</span>
+            </div>
+        </div>
+    </div>
+    <section id="stickers">
+        <div>
+            <img id ="petMe" src="Pet_Me.png">
+        </div>
+    </section>
+    <div id ="right">
+        
+    </div>
+    <div id ="left">
+        
+    </div>
+</body>
+</html>
