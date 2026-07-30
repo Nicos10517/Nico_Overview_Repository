@@ -1,5 +1,5 @@
 # Nico_Overview_Repository
-Collection of key projects conducted at Willamette University
+Collection of a few key, showcase projects conducted at Willamette University
 
 **Operating System in Rust**
 
