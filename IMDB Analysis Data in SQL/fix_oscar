@@ -1,0 +1,20 @@
+import csv
+
+#Used chat gpt to help with this
+
+in_path  = r"C:\Users\Public\WU_CourseLoad\pair-project-oliver-and-nico-main\pair-project-oliver-and-nico-main\oscar_data\full_data.csv"
+out_path = r"C:\Users\Public\WU_CourseLoad\pair-project-oliver-and-nico-main\pair-project-oliver-and-nico-main\oscar_data\full_data_fixed.csv"
+
+with open(in_path, newline="", encoding="utf-8") as inf, \
+     open(out_path, "w", newline="", encoding="utf-8") as outf:
+    r = csv.reader(inf, delimiter="\t")
+    w = csv.writer(outf, delimiter="\t", lineterminator="\n")
+
+    header = next(r)
+    n = len(header)
+    w.writerow(header)
+
+    for row in r:
+        # truncate if somehow longer, then pad with blanks up to 16
+        row = row[:n] + [""] * (n - len(row))
+        w.writerow(row)
